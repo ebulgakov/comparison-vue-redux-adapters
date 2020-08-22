@@ -1,0 +1,26 @@
+<div id="vdeux-counter">
+  <h1>Vdeux Counter</h1>
+  <div>Count: {{ $state.counter }}</div>
+
+  <button @click="decrease">-1</button>
+  <button @click="increase">+1</button>
+</div>
+
+<div id="vue-redux-counter">
+  <h1>Vue-Redux Counter</h1>
+  <div>Count: {{ state.counter }}</div>
+
+  <button @click="actions.decrement">-1</button>
+  <button @click="actions.increment">+1</button>
+</div>
+
+<div id="redux-vue-counter"></div>
+<div id="demo"></div>
+
+<div id="vanilla-counter">
+  <h1>Vanilla Counter</h1>
+  <div>Count: <span id="vanilla-counter-counter"></span></div>
+
+  <button id="vanilla-counter-decrease">-1</button>
+  <button id="vanilla-counter-increase">+1</button>
+</div>
