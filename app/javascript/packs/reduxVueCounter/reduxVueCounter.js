@@ -19,7 +19,7 @@ const AppComponent = {
   },
   render () {
     return <div>
-      <h1>Redux-Vue Counter (jsx)</h1>
+      <h1><a href="https://github.com/nadimtuhin/redux-vue" target="_blank">redux-vue</a> Counter (jsx)</h1>
       <div>Count: { this.counter }</div>
       <button on-click={this.decrement}>-1</button>
       <button on-click={this.increment}>+1</button>
