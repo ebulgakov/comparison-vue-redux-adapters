@@ -1,6 +1,7 @@
 import Vue from 'vue';
+import { bindActionCreators } from 'redux';
 import { reduxStorePlugin, connect } from 'redux-vue';
-import {increment, decrement} from "../counterReducers/actions";
+import * as Actions from '../counterReducers/actions'
 import store from '../store';
 
 Vue.use(reduxStorePlugin);
@@ -34,14 +35,7 @@ function mapStateToProps(state) {
 }
 
 function mapActionToProps(dispatch) {
-  return {
-    increment() {
-      dispatch(increment())
-    },
-    decrement() {
-      dispatch(decrement())
-    }
-  }
+  return { ...bindActionCreators(Actions, dispatch) }
 }
 
 const App = connect(mapStateToProps, mapActionToProps)(AppComponent);
