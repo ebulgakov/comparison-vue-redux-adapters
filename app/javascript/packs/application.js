@@ -1,13 +1,16 @@
-import initVdeuxCounter from "./vdeuxCounter/vdeuxCounter";
 import initVanillaCounter from "./vanillaCounter/vanillaCounter";
-import initVueReduxCounter from "./vueReduxCounter/vueReduxCounter";
-import initReduxVueCounter from "./reduxVueCounter/reduxVueCounter";
-import initVuejsReduxCounter from "./vuejsReduxCounter/vuejsReduxCounter";
+import initVueConnectCounter from "./vueConnectCounter/vueConnectCounter";
+
+// import initVdeuxCounter from "./vdeuxCounter/vdeuxCounter";
+// import initVueReduxCounter from "./vueReduxCounter/vueReduxCounter";
+// import initReduxVueCounter from "./reduxVueCounter/reduxVueCounter";
+// import initVuejsReduxCounter from "./vuejsReduxCounter/vuejsReduxCounter";
 
 document.addEventListener("DOMContentLoaded", () => {
-  initVdeuxCounter();
-  initVueReduxCounter();
-  initReduxVueCounter();
+  //initVdeuxCounter();
+  //initVueReduxCounter();
+  //initReduxVueCounter();
   initVanillaCounter();
-  initVuejsReduxCounter();
+  //initVuejsReduxCounter();
+  initVueConnectCounter();
 });
